@@ -14,11 +14,11 @@ function toggle(e,time = 0){
 	}else if (elementVisibility === 'block' || elementStyleVisibility === 'visible' || elementStyleDisplay === 'block') {
 		hide(e);
 		}
-		function hide(elemento){
+		function hide(element_to_hide){
 
 				setTimeout(function(){elemento.style.display = "none";},time);
 			}
-		function show(elemento){
+		function show(element_to_show){
 				setTimeout(function(){elemento.style.display = "block";},time);
 			}	
 	}
