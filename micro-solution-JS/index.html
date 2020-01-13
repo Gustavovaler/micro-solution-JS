@@ -1,0 +1,16 @@
+
+<script src="toggle_display_element.js"></script>
+<span id="trigger">Click me for Show or hide</span>
+
+<div id="some_div">
+	<p> Content what you want toggle</p>
+    <span> More content</span>
+</div>
+
+<script >
+	var element = document.getElementById('some_div');
+	var trigger = document.getElementById('trigger');
+	trigger.addEventListener("click", function(){
+		toggle(element);
+	});
+</script>
