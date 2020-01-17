@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax Crud</title>
+	<script src="ajax_single_crud.js"></script>
+</head>
+<body>
+
+	<div id="response_container">
+		
+	</div>
+	<br>
+	<span id="submit">Send</span>
+
+	<script>
+		var responseDiv = document.getElementById('response_container');
+
+		var submit = document.getElementById('submit');
+
+		submit.addEventListener('click',function(){
+			consultDb('GET','response.php',responseDiv);
+		});
+
+
+		
+
+
+	</script>
+
+</body>
+</html>
