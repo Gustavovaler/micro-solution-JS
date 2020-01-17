@@ -13,12 +13,19 @@
 	<span id="submit">Send</span>
 
 	<script>
+		 // we select the element that will contains the response
+
 		var responseDiv = document.getElementById('response_container');
+
+		//	now we select the trigger for send the request
 
 		var submit = document.getElementById('submit');
 
 		submit.addEventListener('click',function(){
-			consultDb('GET','response.php',responseDiv);
+
+		// we call consultBd function : consultDB('method','url_target',element)
+
+			consultDb('GET','response.html',responseDiv);
 		});
 
 

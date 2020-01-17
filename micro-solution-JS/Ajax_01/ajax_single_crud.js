@@ -1,9 +1,5 @@
 	
 
-
-
-
-
 var consultDb = function (petition, url,element){
 
 	var conexion_ajax = new XMLHttpRequest();
